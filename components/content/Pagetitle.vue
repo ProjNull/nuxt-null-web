@@ -8,10 +8,10 @@
     $anime({
         targets: '.scroll ',
         translateX: [
-            {value:"-2%",duration:0},
-            {value:"-3%"},
-            {value:"0%"},
-            {value:"-2%"},
+            {value:"-4rem",duration:0},
+            {value:"-10rem"},
+            {value:"0rem"},
+            {value:"-4rem"},
         ],
         opacity: [
             {value:"1",duration: 0},
@@ -35,7 +35,7 @@
             <div class="scroll">
                 <h1>
                     <template v-for="e in 40">
-                        {{ text?.replaceAll(' ', '_') }}_
+                        {{ (text + ' ').replaceAll(' ', '_')  }}
                     </template>
                 </h1>
             </div>
@@ -53,6 +53,7 @@
     .titlebg h1 {
         display: inline;
         font-weight: inherit;
+        font-family: DejavuMono;
     }
 
     .titlebg {
