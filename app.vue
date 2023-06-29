@@ -22,11 +22,14 @@ watch(
   { deep: true }
 )
 </script>
+
 <template>
+  <CookieControl locale="en" />
   <div>
     <NavBar brand="{NULL}">
       <NavButton href="/" text="Home" insidelink="true"/>
       <NavButton href="./about" text="About" insidelink="true"/>
+      <NavButton href="./projects" text="Projects" insidelink="true"/>
     </NavBar>
     <div class="container">
       <NuxtPage/>
@@ -38,6 +41,8 @@ watch(
    
   </div>
 </template>
+
+
 
 
 <script>
