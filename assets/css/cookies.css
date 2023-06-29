@@ -1,0 +1,19 @@
+.cookieControl__Modal {
+    backdrop-filter: blur(10px);
+}
+
+.cookieControl__ModalCookieName {
+    font-size: larger;
+}
+
+.cookieControl__ModalCookieName span {
+    font-size: large;
+}
+
+.cookieControl__ModalContent {
+    border-radius: 1rem;
+}
+
+.cookieControl__ModalContent button, .cookieControl__BarContainer button {
+    border-radius: 1rem;
+}
