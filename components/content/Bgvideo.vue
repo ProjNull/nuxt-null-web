@@ -1,5 +1,5 @@
 <template>
-    <video class="video" autoplay loop muted src="/public/bg.mp4"/>
+    <video class="video" autoplay loop muted src="/bg.mp4"/>
 </template>
 
 <style scoped>
