@@ -12,7 +12,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Dejavu;
+    font-family: Opensans-var;
 }
 @font-face {
   font-family: DejavuMono;
@@ -38,4 +38,79 @@ body {
     font-weight: normal;
     font-style: normal;
     
+}
+
+.isLoading {
+    background: white;
+    box-sizing: border-box;
+    border: none;
+    animation: loading 1s infinite ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        background: white;
+    }
+    50% {
+        background: rgb(196, 196, 196);
+        
+    }
+    100% {
+        background: white;
+    }
+}
+
+
+.linkbutton {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-inline: 1rem;
+    margin-block: 0.5rem;
+    isolation: isolate;
+    color: black;
+    text-decoration: none;
+}
+
+.linkbutton::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	display: block;
+	background-color: #00ff00;
+	filter: brightness(0.7);
+	transform: skewX(-45deg);
+	z-index: -1;
+	transition: 200ms;
+}
+
+.linkbutton:is(:hover, :focus):not([href=""])::before {
+	position: absolute;
+	content: "";
+	inset: 0;
+	display: block;
+	background-color: #00ff00;
+	transform: skewX(-40deg) scale(1.1) scaleX(1.1);
+	z-index: -1;
+}
+
+.linkbutton::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	display: block;
+	background-color: #00ff00;
+	transform: skewX(-45deg);
+	z-index: -1;
+	transition: 200ms;
+}
+
+.linkbutton:is(:hover, :focus):not([href=""])::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	display: block;
+	background-color: #00ff00;
+	transform: skewX(-45deg) scale(1.1);
+	z-index: -1;
 }
