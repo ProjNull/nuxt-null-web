@@ -9,9 +9,9 @@
 
 .navbar .brand {
     display: inline-block;
-    padding: 0.7rem;
+    padding: 0.0rem;
     font-weight: bold;
-    margin-inline: 1rem;
+    margin-inline: 1rem 1.3rem;
     font-size:larger;
     font-family: DejavuMono;
 }
@@ -43,9 +43,10 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 0.7rem;
+    padding: 0.7rem 0.9rem;
     margin-right: 0.3rem;
     transition: color 200ms;
+    font-family: Oswald-var;;
 }
 
 .navlist a.router-link-active {
