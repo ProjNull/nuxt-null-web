@@ -1,11 +1,16 @@
 <template>
   <div>
-    <nav>
-      
-    </nav>  
+    <NavBar brand="{NULL}">
+      <NavButton href="/" text="Home" insidelink="true"/>
+      <NavButton href="./about" text="About" insidelink="true"/>
+    </NavBar>
     <div class="container">
       <NuxtPage/>
     </div>
+
+    <Footer>
+
+    </Footer>
    
   </div>
 </template>
