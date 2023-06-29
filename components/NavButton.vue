@@ -8,5 +8,5 @@ defineProps({
 
 <template>
     <a v-if="!insidelink" :href="href">{{ text }}</a>
-    <NuxtLink v-else :to="href">{{ text }} (in)</NuxtLink>
+    <NuxtLink v-else :to="href">{{ text }}</NuxtLink>
 </template>
