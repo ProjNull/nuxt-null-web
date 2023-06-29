@@ -6,5 +6,5 @@ defineProps({
 </script>
 
 <template>
-    <a class="linkbutton" :href="to">{{ text }}</a>
+    <a class="linkbutton" :href="to" target="_blank">{{ text }}</a>
 </template>
