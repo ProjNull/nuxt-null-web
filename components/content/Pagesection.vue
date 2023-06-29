@@ -27,6 +27,7 @@ defineProps({
     max-width: 70rem;
     margin-inline: auto;
     padding-inline: 1rem;
+    text-align: center;
   }
   
 </style>
