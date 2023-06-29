@@ -1,0 +1,96 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar .brand {
+    display: inline-block;
+    padding: 0.7rem;
+    font-weight: bold;
+    margin-inline: 1rem;
+    font-size:larger;
+    font-family: DejavuMono;
+}
+
+.navbar .brand::after {
+    content: "_";
+    font-weight: bold;
+    animation: brandblink 1s infinite steps(1);
+}
+
+@keyframes brandblink {
+    0% {
+        color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        color: rgb(255, 255, 255)
+    }
+    100% {
+        color: rgb(255, 255, 255)
+    }
+}
+
+.navlist {
+    display: inline-block;
+}
+
+.navlist a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    margin-right: 0.3rem;
+    transition: color 200ms;
+}
+
+.navlist a.router-link-active {
+    color: rgb(0, 0, 0); 
+}
+
+
+.navlist a::before {
+    position: absolute;
+    inset:0  100% ;
+    width: 0%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-color: #008800;
+
+    transform: skewX(-45deg);
+    transition: 200ms;
+}
+
+.navlist a:hover::before {
+    inset: 0;
+    width: 100% ;
+}
+
+.navlist a::after {
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    transform: skewX(-45deg);
+    background-color: rgb(0, 0255, 0);
+    transition: 200ms;
+}
+
+.navlist a:is(.router-link-active)::after {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    transform: skewX(-45deg);
+}
+
+

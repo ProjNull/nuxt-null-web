@@ -15,11 +15,10 @@
   </div>
 </template>
 
-<style scoped>
- .container {
-  max-width: 70rem;
-  margin-inline: auto;
-  padding-inline: 1rem;
- }
-  
-</style>
+
+<script>
+    import "~/assets/css/main.css"
+    import "~/assets/css/navbar.css"
+    import "~/assets/css/textstyles.css"
+    import "~/assets/css/sections.css"
+</script>

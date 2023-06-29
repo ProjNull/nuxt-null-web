@@ -1,0 +1,41 @@
+body {
+    background-color: #1c1b22;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    padding-bottom: 3rem;
+}
+
+
+body {
+    margin: 0;
+    font-family: Dejavu;
+}
+@font-face {
+  font-family: DejavuMono;
+  src: url(/assets/fonts/mainfont-webfont.woff2) format('woff2');
+  font-weight:bold;
+  font-style:normal;
+}
+
+
+@font-face {
+    font-family: Oswald-var;
+    src: url(/assets/fonts/titlefont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Opensans-var;
+    src: url(/assets/fonts/Opensans.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Dejavu;
+    src: url(/assets/fonts/dejavusans-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    
+}
