@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   //   preset: 'service-worker'
   // },
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@hypernym/nuxt-anime', '@dargmuesli/nuxt-cookie-control', 'nuxt-lazy-load'],
+  modules: ['@nuxt/content', '@hypernym/nuxt-anime', '@dargmuesli/nuxt-cookie-control'],
   cookieControl: {
     domain: 'null.mobilex1122.eu',
     cookies: {
