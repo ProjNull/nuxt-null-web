@@ -12,6 +12,8 @@ NULL is a special group formed for the sole purpose to compete in school
 competetions such as but not limited to - Hackaton, WebRace...
 To see some of our work you can visit our GitHub page below.
 
+:linkbutton{to="https://github.com/ProjNull" text="Github"}
+
 ::
 
 ::pagesection{type="none"}
